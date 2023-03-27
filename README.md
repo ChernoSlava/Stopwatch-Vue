@@ -16,6 +16,24 @@
 
 
 ---
+## Предпросмотр 
+
+### При старте приложения
+<div>
+  <img 
+    src='./src/assets/img/1.png' 
+    width="600px"
+  >
+</div>
+
+### Секундомеры добавленны и работают
+<div>
+  <img 
+    src='./src/assets/img/2.png' 
+    width="600px"
+  >
+</div>
+
 ## Установка и запуск
 
 Требования:
@@ -63,3 +81,4 @@
 2) [Films review с использование PUG/SCSS](https://github.com/ChernoSlava/Film-Review);
 3) [2d игра на Vanila JavaScript/Canvas](https://github.com/ChernoSlava/Fluppy);
 4) [Сайт по продаже бургеров React/Next js](https://github.com/ChernoSlava/Burgers-Next-JS).
+5) [Сайт обозреватель погоды Weather_terminal с использованием SASS/Vue js](https://github.com/ChernoSlava/Weather_terminal)
