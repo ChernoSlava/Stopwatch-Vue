@@ -4,16 +4,11 @@
   max-width: 1024px;
   margin: 0 auto;
   font-weight: normal;
-  display: flex;
   justify-content: center;
 }
 
 @media (min-width: 1024px) {
   body {
     display: flex;
-  }
-
-  #app {
-    display: grid;
   }
 }
