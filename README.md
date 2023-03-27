@@ -26,7 +26,7 @@
 
 Для установки на ваш компьютер нужно на локальном компьютере выполнить команду: 
 
-- `git clone https://github.com/ChernoSlava/Timer-Vue.git` - Для копирования проекта на локальный пк по https;
+- `git clone https://github.com/ChernoSlava/Stopwatch-Vue.git` - Для копирования проекта на локальный пк по https;
 
 После этого в консоли нужно выполнить: 
 
