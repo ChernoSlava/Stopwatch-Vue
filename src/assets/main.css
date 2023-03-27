@@ -1,11 +1,5 @@
 @import './base.css';
 
-@font-face {
-  src: url('./fonts/gothampro.ttf');
-  font-family: 'Gotham Pro';
-}
-
-
 #app {
   max-width: 1024px;
   margin: 0 auto;
