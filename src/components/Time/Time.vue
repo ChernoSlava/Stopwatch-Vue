@@ -12,17 +12,26 @@ const value = ref(0);
 const status = ref("idle");
 
 let interval = 0;
+let start = 0;
+let pausedTime = 0;
 
 const onStart = () => {
   if (!["idle", "paused"].includes(status.value)) {
     return;
   }
 
+  if (!start && status.value === "idle") {
+    start = Date.now();
+  } else {
+    start = start + (Date.now() - pausedTime);
+  }
+
+  pausedTime = 0;
   status.value = "started";
 
   interval = setInterval(() => {
-    value.value++;
-  }, 1000);
+    value.value = Math.floor((Date.now() - start) / 1000);
+  }, 100);
 };
 
 const onStop = () => {
@@ -33,6 +42,8 @@ const onStop = () => {
   clearInterval(interval);
   status.value = "idle";
   value.value = 0;
+  start = 0;
+  pausedTime = 0;
 };
 
 const onPaused = () => {
@@ -40,10 +51,11 @@ const onPaused = () => {
     return;
   }
 
+  pausedTime = Date.now();
+  
   clearInterval(interval);
   status.value = "paused";
 };
-
 </script>
 
 <template>
